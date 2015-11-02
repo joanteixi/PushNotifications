@@ -1,0 +1,31 @@
+{
+  "name": "laiogurt/notification",
+  "description": "notifications",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Joan Teixidó",
+      "email": "joan@laiogurtera.com"
+    }
+  ],
+  "autoload": {
+    "psr-0": {
+      "Notification\\": "src/",
+      "Notification\\Test\\": "test/src/"
+    }
+  },
+  "require": {
+    "php": ">=5.3.3"
+  },
+
+  "require-dev": {
+    "behat/behat": "~2.5"
+  },
+
+  "config": {
+    "bin-dir": "bin/"
+  }
+}
+
+
