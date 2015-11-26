@@ -40,5 +40,17 @@ class DefaultMessage implements MessageInterface
         // TODO: Implement setPayload() method.
     }
 
+    public function __toString()
+    {
+        return $this->getMessage();
+    }
+
+    public function getMessage()
+    {
+        $params = ["to" => "bk3RNwTe3H0:CI2k_HHwgIpoDKCIZvvDMExUdFQ3P1"];
+
+        return json_encode($params);
+    }
+
 
 }

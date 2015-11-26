@@ -7,6 +7,7 @@
 
 namespace Notification\Device;
 
+use Notification\Message\MessageInterface;
 use Notification\Transport\TransportInterface;
 
 class AndroidDevice implements DeviceInterface
@@ -18,8 +19,9 @@ class AndroidDevice implements DeviceInterface
         $this->transport = $transport;
     }
 
-    public function send($message, $token)
+    public function send(MessageInterface $message, $token)
     {
+
         return $this->transport->send($message, $token);
     }
 

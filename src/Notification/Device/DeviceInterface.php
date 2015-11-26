@@ -7,11 +7,12 @@
 
 namespace Notification\Device;
 
+use Notification\Message\MessageInterface;
 use Notification\Transport\TransportInterface;
 
 interface DeviceInterface
 {
     public function __construct(TransportInterface $transport);
 
-    public function send($message, $token);
+    public function send(MessageInterface $message, $token);
 }

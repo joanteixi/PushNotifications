@@ -18,5 +18,6 @@ interface MessageInterface
 
     public function setPayload();
 
+    public function getMessage();
 
 }
